@@ -3,39 +3,47 @@
   <uml:Package xmi:id="_cAD0wO2NEeSt27tInGX10A" name="no.ntnu.ttm4115.hhh">
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_cAEb0e2NEeSt27tInGX10A" name="Heater" classifierBehavior="_cBdi8e2NEeSt27tInGX10A" collaborationRole="_cBfYIO2NEeSt27tInGX10A">
       <ownedAttribute xmi:id="_cBfYIO2NEeSt27tInGX10A" name="component"/>
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_cBdi8e2NEeSt27tInGX10A" name="Heater" node="_dl0RoO2NEeSt27tInGX10A _fffJAO2NEeSt27tInGX10A _iVV70O2NEeSt27tInGX10A _CdjY8O2PEeSt27tInGX10A _eFprcO2REeSt27tInGX10A _hdiNQO2REeSt27tInGX10A" group="_cBf_MO2NEeSt27tInGX10A" partition="_cBf_MO2NEeSt27tInGX10A">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_cBdi8e2NEeSt27tInGX10A" name="Heater" node="_dl0RoO2NEeSt27tInGX10A _fffJAO2NEeSt27tInGX10A _iVV70O2NEeSt27tInGX10A _CdjY8O2PEeSt27tInGX10A _hdiNQO2REeSt27tInGX10A _IB7oEfLgEeS2EYyPxEr2Fg" group="_cBf_MO2NEeSt27tInGX10A" partition="_cBf_MO2NEeSt27tInGX10A">
         <ownedOperation xmi:id="_iVY_IO2NEeSt27tInGX10A" name="MQTTSetup"/>
         <ownedOperation xmi:id="_CdmcQO2PEeSt27tInGX10A" name="msgHandler"/>
         <ownedOperation xmi:id="_hdl3oO2REeSt27tInGX10A" name="createMessage"/>
+        <ownedOperation xmi:id="_rgnLYPLZEeS2EYyPxEr2Fg" name="getDesiredTemperature"/>
+        <ownedOperation xmi:id="_rgq1wPLZEeS2EYyPxEr2Fg" name="setDesiredTemperature"/>
+        <ownedOperation xmi:id="_rgtSAPLZEeS2EYyPxEr2Fg" name="isStatus"/>
+        <ownedOperation xmi:id="_rgvHMPLZEeS2EYyPxEr2Fg" name="getCurrentTemperature"/>
+        <ownedOperation xmi:id="_rgw8YPLZEeS2EYyPxEr2Fg" name="getLooPayload"/>
+        <ownedOperation xmi:id="_rgyxkPLZEeS2EYyPxEr2Fg" name="setLooPayload"/>
+        <ownedOperation xmi:id="_rg0mwPLZEeS2EYyPxEr2Fg" name="setCurrentTemperature"/>
+        <ownedOperation xmi:id="_rg2b8PLZEeS2EYyPxEr2Fg" name="setStatus"/>
         <edge xmi:type="uml:ObjectFlow" xmi:id="_yRgdkO2NEeSt27tInGX10A" name="e1" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_ffphEO2NEeSt27tInGX10A" source="_tHa-UO2NEeSt27tInGX10A"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_JFNe4O2OEeSt27tInGX10A" name="e0" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_iVV70O2NEeSt27tInGX10A" source="_dl0RoO2NEeSt27tInGX10A"/>
         <edge xmi:type="uml:ObjectFlow" xmi:id="_Vre7gO2REeSt27tInGX10A" name="e2" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_Q6zssO2PEeSt27tInGX10A" source="_ffskYO2NEeSt27tInGX10A"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_jEF7YO2REeSt27tInGX10A" name="e4" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_hdiNQO2REeSt27tInGX10A" source="_eFprcO2REeSt27tInGX10A"/>
-        <edge xmi:type="uml:ObjectFlow" xmi:id="_ja5R0O2REeSt27tInGX10A" name="e5" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_ffqvMO2NEeSt27tInGX10A" source="_7AH2sO2REeSt27tInGX10A"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_kQL7EO2REeSt27tInGX10A" name="e6" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_eFprcO2REeSt27tInGX10A" source="_ffyrAO2NEeSt27tInGX10A"/>
-        <variable xmi:id="_7ft5kO2NEeSt27tInGX10A" name="DesiredTemperature" type="_9RQIoO2NEeSt27tInGX10A"/>
-        <variable xmi:id="__moroO2NEeSt27tInGX10A" name="CurrentTemperature" type="_9RQIoO2NEeSt27tInGX10A"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_cBf_MO2NEeSt27tInGX10A" name="component" node="_dl0RoO2NEeSt27tInGX10A _fffJAO2NEeSt27tInGX10A _ffphEO2NEeSt27tInGX10A _ffqvMO2NEeSt27tInGX10A _ffskYO2NEeSt27tInGX10A _ffuZkO2NEeSt27tInGX10A _ffwOwO2NEeSt27tInGX10A _ffyrAO2NEeSt27tInGX10A _iVV70O2NEeSt27tInGX10A _tHa-UO2NEeSt27tInGX10A _CdjY8O2PEeSt27tInGX10A _Q6zssO2PEeSt27tInGX10A _eFprcO2REeSt27tInGX10A _hdiNQO2REeSt27tInGX10A _7AH2sO2REeSt27tInGX10A" edge="_yRgdkO2NEeSt27tInGX10A _JFNe4O2OEeSt27tInGX10A _Vre7gO2REeSt27tInGX10A _jEF7YO2REeSt27tInGX10A _ja5R0O2REeSt27tInGX10A _kQL7EO2REeSt27tInGX10A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_cCaeYPLhEeS2EYyPxEr2Fg" name="e3" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_IB7oEfLgEeS2EYyPxEr2Fg" source="_CdjY8O2PEeSt27tInGX10A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_cQ5mUPLhEeS2EYyPxEr2Fg" name="e4" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_hdiNQO2REeSt27tInGX10A" source="_IB7oEfLgEeS2EYyPxEr2Fg"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_dRNz0PLhEeS2EYyPxEr2Fg" name="e5" inPartition="_cBf_MO2NEeSt27tInGX10A" target="_ffqvMO2NEeSt27tInGX10A" source="_7AH2sO2REeSt27tInGX10A"/>
+        <variable xmi:id="_eb8bMPLZEeS2EYyPxEr2Fg" name="Status" type="_fP610PLZEeS2EYyPxEr2Fg"/>
+        <variable xmi:id="_kxtDYPLZEeS2EYyPxEr2Fg" name="looPayload" type="_mPczwPLZEeS2EYyPxEr2Fg"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_cBf_MO2NEeSt27tInGX10A" name="component" node="_dl0RoO2NEeSt27tInGX10A _fffJAO2NEeSt27tInGX10A _ffphEO2NEeSt27tInGX10A _ffqvMO2NEeSt27tInGX10A _ffskYO2NEeSt27tInGX10A _ffuZkO2NEeSt27tInGX10A _ffwOwO2NEeSt27tInGX10A _ffyrAO2NEeSt27tInGX10A _iVV70O2NEeSt27tInGX10A _tHa-UO2NEeSt27tInGX10A _CdjY8O2PEeSt27tInGX10A _Q6zssO2PEeSt27tInGX10A _hdiNQO2REeSt27tInGX10A _7AH2sO2REeSt27tInGX10A _IB7oEfLgEeS2EYyPxEr2Fg" edge="_yRgdkO2NEeSt27tInGX10A _JFNe4O2OEeSt27tInGX10A _Vre7gO2REeSt27tInGX10A _cCaeYPLhEeS2EYyPxEr2Fg _cQ5mUPLhEeS2EYyPxEr2Fg _dRNz0PLhEeS2EYyPxEr2Fg"/>
         <node xmi:type="uml:InitialNode" xmi:id="_dl0RoO2NEeSt27tInGX10A" name="i0" outgoing="_JFNe4O2OEeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A"/>
         <node xmi:type="uml:CallBehaviorAction" xmi:id="_fffJAO2NEeSt27tInGX10A" name="b0" inPartition="_cBf_MO2NEeSt27tInGX10A" behavior="_CDPgcD5UEeSLNMcFh65MeQ">
           <argument xmi:id="_ffphEO2NEeSt27tInGX10A" name="init" incoming="_yRgdkO2NEeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffiMUO2NEeSt27tInGX10A"/>
-          <argument xmi:id="_ffqvMO2NEeSt27tInGX10A" name="publish" incoming="_ja5R0O2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
+          <argument xmi:id="_ffqvMO2NEeSt27tInGX10A" name="publish" incoming="_dRNz0PLhEeS2EYyPxEr2Fg" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
           <argument xmi:id="_ffuZkO2NEeSt27tInGX10A" name="stop" inPartition="_cBf_MO2NEeSt27tInGX10A"/>
           <result xmi:id="_ffskYO2NEeSt27tInGX10A" name="msgArrived" outgoing="_Vre7gO2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
           <result xmi:id="_ffwOwO2NEeSt27tInGX10A" name="stopped" inPartition="_cBf_MO2NEeSt27tInGX10A"/>
-          <result xmi:id="_ffyrAO2NEeSt27tInGX10A" name="ready" outgoing="_kQL7EO2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A"/>
+          <result xmi:id="_ffyrAO2NEeSt27tInGX10A" name="ready" inPartition="_cBf_MO2NEeSt27tInGX10A"/>
         </node>
         <node xmi:type="uml:CallOperationAction" xmi:id="_iVV70O2NEeSt27tInGX10A" name="o0" incoming="_JFNe4O2OEeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" operation="_iVY_IO2NEeSt27tInGX10A">
           <result xmi:id="_tHa-UO2NEeSt27tInGX10A" name="" outgoing="_yRgdkO2NEeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffiMUO2NEeSt27tInGX10A"/>
         </node>
-        <node xmi:type="uml:CallOperationAction" xmi:id="_CdjY8O2PEeSt27tInGX10A" name="o1" inPartition="_cBf_MO2NEeSt27tInGX10A" operation="_CdmcQO2PEeSt27tInGX10A">
+        <node xmi:type="uml:CallOperationAction" xmi:id="_CdjY8O2PEeSt27tInGX10A" name="o1" outgoing="_cCaeYPLhEeS2EYyPxEr2Fg" inPartition="_cBf_MO2NEeSt27tInGX10A" operation="_CdmcQO2PEeSt27tInGX10A">
           <argument xmi:id="_Q6zssO2PEeSt27tInGX10A" name="m" incoming="_Vre7gO2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
         </node>
-        <node xmi:type="uml:AcceptEventAction" xmi:id="_eFprcO2REeSt27tInGX10A" name="t0" incoming="_kQL7EO2REeSt27tInGX10A" outgoing="_jEF7YO2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A">
-          <trigger xmi:id="_eFprce2REeSt27tInGX10A" name="t0" event="_eFpEYO2REeSt27tInGX10A"/>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_hdiNQO2REeSt27tInGX10A" name="o2" incoming="_cQ5mUPLhEeS2EYyPxEr2Fg" inPartition="_cBf_MO2NEeSt27tInGX10A" operation="_hdl3oO2REeSt27tInGX10A">
+          <result xmi:id="_7AH2sO2REeSt27tInGX10A" name="" outgoing="_dRNz0PLhEeS2EYyPxEr2Fg" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
         </node>
-        <node xmi:type="uml:CallOperationAction" xmi:id="_hdiNQO2REeSt27tInGX10A" name="o2" incoming="_jEF7YO2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" operation="_hdl3oO2REeSt27tInGX10A">
-          <result xmi:id="_7AH2sO2REeSt27tInGX10A" name="" outgoing="_ja5R0O2REeSt27tInGX10A" inPartition="_cBf_MO2NEeSt27tInGX10A" type="_ffizYO2NEeSt27tInGX10A"/>
+        <node xmi:type="uml:AcceptEventAction" xmi:id="_IB7oEfLgEeS2EYyPxEr2Fg" name="t1" incoming="_cCaeYPLhEeS2EYyPxEr2Fg" outgoing="_cQ5mUPLhEeS2EYyPxEr2Fg" inPartition="_cBf_MO2NEeSt27tInGX10A">
+          <trigger xmi:id="_IB7oEvLgEeS2EYyPxEr2Fg" name="t1" event="_IB7oEPLgEeS2EYyPxEr2Fg"/>
         </node>
       </ownedBehavior>
     </packagedElement>
@@ -92,6 +100,18 @@
         <expr xmi:type="uml:LiteralString" xmi:id="_eF5jEO2REeSt27tInGX10A" name="t0" value="1000"/>
       </when>
     </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_H_CJQPLZEeS2EYyPxEr2Fg" name="t0">
+      <when xmi:id="_J-WjYPLeEeS2EYyPxEr2Fg" name="t0">
+        <expr xmi:type="uml:LiteralString" xmi:id="_J-WjYfLeEeS2EYyPxEr2Fg" name="t0" value="1000"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fP610PLZEeS2EYyPxEr2Fg" name="boolean"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mPczwPLZEeS2EYyPxEr2Fg" name="java.lang.String"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_IB7oEPLgEeS2EYyPxEr2Fg" name="t1">
+      <when xmi:id="_lkzSQPLvEeS2EYyPxEr2Fg" name="t1">
+        <expr xmi:type="uml:LiteralString" xmi:id="_lkzSQfLvEeS2EYyPxEr2Fg" name="t1" value="500"/>
+      </when>
+    </packagedElement>
     <profileApplication xmi:id="_cAD0we2NEeSt27tInGX10A">
       <eAnnotations xmi:id="_cAEb0O2NEeSt27tInGX10A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
@@ -128,11 +148,11 @@
   <graphics:Shape xmi:id="_ff1uUe2NEeSt27tInGX10A" x="18" y="18" base_Element="_ffphEO2NEeSt27tInGX10A" orientation="north"/>
   <graphics:Shape xmi:id="_ff2VYO2NEeSt27tInGX10A" x="198" y="306" width="430" height="341" base_Element="_fffJAO2NEeSt27tInGX10A"/>
   <graphics:Shape xmi:id="_iVr6EO2NEeSt27tInGX10A" x="180" y="234" width="199" height="55" base_Element="_iVV70O2NEeSt27tInGX10A"/>
-  <arctis:location xmi:id="_7fvHsO2NEeSt27tInGX10A" base_Variable="_7ft5kO2NEeSt27tInGX10A" partition="_cBf_MO2NEeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="_7fvHse2NEeSt27tInGX10A" x="828" y="90" base_Element="_7ft5kO2NEeSt27tInGX10A"/>
-  <arctis:location xmi:id="__mp5wO2NEeSt27tInGX10A" base_Variable="__moroO2NEeSt27tInGX10A" partition="_cBf_MO2NEeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="__mp5we2NEeSt27tInGX10A" x="828" y="144" base_Element="__moroO2NEeSt27tInGX10A"/>
   <graphics:Shape xmi:id="_CdyCcO2PEeSt27tInGX10A" x="918" y="360" width="199" height="55" base_Element="_CdjY8O2PEeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="_eF-bkO2REeSt27tInGX10A" x="711" y="387" width="37" height="37" base_Element="_eFprcO2REeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="_hd8c8O2REeSt27tInGX10A" x="648" y="450" width="199" height="55" base_Element="_hdiNQO2REeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_hd8c8O2REeSt27tInGX10A" x="720" y="684" width="199" height="55" base_Element="_hdiNQO2REeSt27tInGX10A"/>
+  <arctis:location xmi:id="_eb-QYPLZEeS2EYyPxEr2Fg" base_Variable="_eb8bMPLZEeS2EYyPxEr2Fg" partition="_cBf_MO2NEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_eb-QYfLZEeS2EYyPxEr2Fg" x="810" y="90" base_Element="_eb8bMPLZEeS2EYyPxEr2Fg"/>
+  <arctis:location xmi:id="_kxuRgPLZEeS2EYyPxEr2Fg" base_Variable="_kxtDYPLZEeS2EYyPxEr2Fg" partition="_cBf_MO2NEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_kxu4kPLZEeS2EYyPxEr2Fg" x="810" y="108" base_Element="_kxtDYPLZEeS2EYyPxEr2Fg"/>
+  <graphics:Shape xmi:id="_ICLfsPLgEeS2EYyPxEr2Fg" x="891" y="513" width="37" height="37" base_Element="_IB7oEfLgEeS2EYyPxEr2Fg"/>
 </xmi:XMI>
