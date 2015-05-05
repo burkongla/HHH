@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arctis="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10 pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6 pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw">
   <uml:Package xmi:id="_bVWY8O2PEeSt27tInGX10A" name="no.ntnu.ttm4115.hhh">
-    <packagedElement xmi:type="uml:Activity" xmi:id="_bVXAAe2PEeSt27tInGX10A" name="HeaterSimulation" classifierBehavior="_bYgaoe2PEeSt27tInGX10A" node="_X_KDwO2QEeSt27tInGX10A _lY3P0O2QEeSt27tInGX10A _o8JJUO2QEeSt27tInGX10A" group="_bVXnEO2PEeSt27tInGX10A" partition="_bVXnEO2PEeSt27tInGX10A">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_bVXAAe2PEeSt27tInGX10A" name="HeaterSimulation" classifierBehavior="_bYgaoe2PEeSt27tInGX10A" node="_X_KDwO2QEeSt27tInGX10A _o8JJUO2QEeSt27tInGX10A _VZ0koO8OEeSGQ8EMKFS8ZA _bAJT8O8OEeSGQ8EMKFS8ZA _do8iMe8OEeSGQ8EMKFS8ZA _h6SbkO8OEeSGQ8EMKFS8ZA" group="_bVXnEO2PEeSt27tInGX10A" partition="_bVXnEO2PEeSt27tInGX10A">
       <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bYgaoe2PEeSt27tInGX10A" name="HeaterSimulation">
         <region xmi:id="_bYgao-2PEeSt27tInGX10A" name="&lt;region>">
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_bYhBsO2PEeSt27tInGX10A" name="&lt;initial>"/>
         </region>
       </ownedBehavior>
+      <ownedOperation xmi:id="_bAhucO8OEeSGQ8EMKFS8ZA" name="randomDuration"/>
+      <ownedOperation xmi:id="_h6YiMO8OEeSGQ8EMKFS8ZA" name="creatTemp"/>
+      <ownedOperation xmi:id="_k_FCQO8OEeSGQ8EMKFS8ZA" name="createTemp"/>
       <ownedParameter xmi:id="_X_TNsO2QEeSt27tInGX10A" name="start"/>
-      <ownedParameter xmi:id="_lY_LoO2QEeSt27tInGX10A" name="stop" isStream="true"/>
       <ownedParameter xmi:id="_o8STQO2QEeSt27tInGX10A" name="stopped" direction="out"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_bVXnEO2PEeSt27tInGX10A" name="main" node="_X_KDwO2QEeSt27tInGX10A _lY3P0O2QEeSt27tInGX10A _o8JJUO2QEeSt27tInGX10A"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_bVXnEO2PEeSt27tInGX10A" name="main" node="_X_KDwO2QEeSt27tInGX10A _o8JJUO2QEeSt27tInGX10A _VZ0koO8OEeSGQ8EMKFS8ZA _bAJT8O8OEeSGQ8EMKFS8ZA _do8iMe8OEeSGQ8EMKFS8ZA _h6SbkO8OEeSGQ8EMKFS8ZA"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_X_KDwO2QEeSt27tInGX10A" name="start" inPartition="_bVXnEO2PEeSt27tInGX10A" parameter="_X_TNsO2QEeSt27tInGX10A"/>
-      <node xmi:type="uml:ActivityParameterNode" xmi:id="_lY3P0O2QEeSt27tInGX10A" name="stop" inPartition="_bVXnEO2PEeSt27tInGX10A" parameter="_lY_LoO2QEeSt27tInGX10A"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_o8JJUO2QEeSt27tInGX10A" name="stopped" inPartition="_bVXnEO2PEeSt27tInGX10A" parameter="_o8STQO2QEeSt27tInGX10A"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_VZ0koO8OEeSGQ8EMKFS8ZA" name="m0" inPartition="_bVXnEO2PEeSt27tInGX10A"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_bAJT8O8OEeSGQ8EMKFS8ZA" name="o0" inPartition="_bVXnEO2PEeSt27tInGX10A" operation="_bAhucO8OEeSGQ8EMKFS8ZA"/>
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_do8iMe8OEeSGQ8EMKFS8ZA" name="t0" inPartition="_bVXnEO2PEeSt27tInGX10A">
+        <trigger xmi:id="_do8iMu8OEeSGQ8EMKFS8ZA" name="t0" event="_do8iMO8OEeSGQ8EMKFS8ZA"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_h6SbkO8OEeSGQ8EMKFS8ZA" name="o1" inPartition="_bVXnEO2PEeSt27tInGX10A" operation="_h6YiMO8OEeSGQ8EMKFS8ZA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_do8iMO8OEeSGQ8EMKFS8ZA" name="t0">
+      <when xmi:id="_dpIvcO8OEeSGQ8EMKFS8ZA" name="t0">
+        <expr xmi:type="uml:LiteralString" xmi:id="_dpIvce8OEeSGQ8EMKFS8ZA" name="t0" value="1000"/>
+      </when>
     </packagedElement>
     <profileApplication xmi:id="_bVWY8e2PEeSt27tInGX10A">
       <eAnnotations xmi:id="_bVXAAO2PEeSt27tInGX10A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -28,10 +40,13 @@
       <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
     </profileApplication>
   </uml:Package>
-  <graphics:Shape xmi:id="_bYfzkO2PEeSt27tInGX10A" x="180" y="55" width="613" height="54" base_Element="_bVXAAe2PEeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="_bYgaoO2PEeSt27tInGX10A" x="180" y="108" width="613" height="415" base_Element="_bVXnEO2PEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_bYfzkO2PEeSt27tInGX10A" x="180" y="36" width="613" height="55" base_Element="_bVXAAe2PEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_bYgaoO2PEeSt27tInGX10A" x="180" y="108" width="559" height="361" base_Element="_bVXnEO2PEeSt27tInGX10A"/>
   <arctis:esm xmi:id="_bYgaou2PEeSt27tInGX10A" base_StateMachine="_bYgaoe2PEeSt27tInGX10A"/>
   <graphics:Shape xmi:id="_YAdEQO2QEeSt27tInGX10A" x="126" y="162" base_Element="_X_KDwO2QEeSt27tInGX10A" orientation="west"/>
-  <graphics:Shape xmi:id="_lZIVkO2QEeSt27tInGX10A" x="702" y="522" base_Element="_lY3P0O2QEeSt27tInGX10A"/>
-  <graphics:Shape xmi:id="_o8eggO2QEeSt27tInGX10A" x="756" y="522" base_Element="_o8JJUO2QEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_o8eggO2QEeSt27tInGX10A" x="270" y="468" base_Element="_o8JJUO2QEeSt27tInGX10A"/>
+  <graphics:Shape xmi:id="_VaAx4O8OEeSGQ8EMKFS8ZA" x="333" y="153" width="37" height="37" base_Element="_VZ0koO8OEeSGQ8EMKFS8ZA"/>
+  <graphics:Shape xmi:id="_bD9c8O8OEeSGQ8EMKFS8ZA" x="396" y="144" width="199" height="55" base_Element="_bAJT8O8OEeSGQ8EMKFS8ZA"/>
+  <graphics:Shape xmi:id="_dpIvcu8OEeSGQ8EMKFS8ZA" x="477" y="207" width="37" height="37" base_Element="_do8iMe8OEeSGQ8EMKFS8ZA"/>
+  <graphics:Shape xmi:id="_h7n4UO8OEeSGQ8EMKFS8ZA" x="396" y="252" width="199" height="55" base_Element="_h6SbkO8OEeSGQ8EMKFS8ZA"/>
 </xmi:XMI>
